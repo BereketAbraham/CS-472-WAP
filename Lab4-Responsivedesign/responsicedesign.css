@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+/* Header/logo Title */
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    display: flex;
+    background-color:lightblue;
+    border-right: 4px solid black;
+    margin: auto;
+}
+h3{
+    border-right: 2px solid black;
+    padding: 10px;
+}
+.flex-container {
+    display: flex;
+    height: 300px;
+    font: 30px bold;
+
+}
+.column1{
+     flex: 30%;
+     background-color: #f1f1f1;
+     padding: 20px;
+     width: 100%;
+     padding: 20px;
+     box-sizing: border-box;
+     border-right: 2px;
+    background-color: gainsboro;
+ }
+.column2{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px;
+    background-color: gray;
+}
+.column3{
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px;
+    background-color: gainsboro;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: lightblue;
+}
+#validation{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+}

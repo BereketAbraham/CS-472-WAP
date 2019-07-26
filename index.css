@@ -14,10 +14,15 @@ body{
     height: fit-content;
     background-color: white;
 
+
 }
 #poster > img{
     border: 2px solid burlywood;
     border-radius: 10px;
+    border-position: relative;;
+    position: center;
+    display: flex;
+    align-items: center;
 
 }
 
