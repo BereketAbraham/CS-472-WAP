@@ -1,154 +1,142 @@
-function myFunctionTest(expected, function2test) {
-    if (expected === function2test()) {
+/* runs test to see if expected argument is === to value returned by function2test argument */
+function myFunctionTest(expected, found) {
+    if (expected === found) {
         return "TEST SUCCEEDED";
     } else {
-        return "TEST FAILED.  Expected " + expected + " found " + function2test();
+        return "TEST FAILED.  Expected " + expected + " found " + found;
     }
-    ;
 }
-
-function myFunctionArrayTest(expected, function2test) {
-    if (arraysEqual(expected, function2test())) {
-        return "TEST SUCCEEDED";
-    } else {
-        return "TEST FAILED.  Expected " + expected + " found " + function2test();
-    }
-    ;
-}
-
 /* max returns the maximum of 2 arguments */
 function max(a, b) {
     if (a > b) {
         return a;
     } else {
         return b;
-    }
-    ;
+    };
 }
+console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10)));
 
-console.log("Expected output of max(13,10) is 13  " + myFunctionTest(13, function () {
-    return max(13, 10);
-}));
+//console.log("Expected----- output of max(20,10) is 20 and  " + myFunctionTest(20, function(){return 20;} ));
+
 
 /* max3 takes 3 numbers as arguments and returns the largest */
 function maxOfThree(a, b, c) {
     return max(max(a, b), c);
-
 }
+console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44, maxOfThree(5, 4, 44)));
+console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55, maxOfThree(55, 4, 44)));
+console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4, maxOfThree(55, 4, 44)));
 
-console.log("Expected output of maxOfThree(8,5,6) is 8  " + myFunctionTest(8, function () {
-    return maxOfThree(8, 5, 6);
-}));
-/* takes a strignas argument and checks of there is a vowel in it */
-function isVowel(a) {
-    if (a.length !== 1) {
+
+
+function isVowel(alphabet){
+    if(alphabet.length !== 1)
         return false;
-    } else {
-        if (a === 'a' || a === 'i' || a === 'e' || a === 'o' || a === 'u') {
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
-
-console.log("Expected output of isVowel('e) is true " + myFunctionTest(true, function () {
-    return isVowel('e');
-}));
-/* take an array as a function and adds all the elements in the array and gives a total sum as an output */
-function sum(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
-    return sum;
-}
-
-console.log("Expected output of sum of elements in array [1,2,3,4] is 10 " + myFunctionTest(10, function () {
-    return sum([1, 2, 3, 4]);
-}));
-
-function multiply(arr) {
-    const f = arr.reduce(function (prevVal, elem, i, array) {
-        return prevVal * elem;
-    });
-    return f;
-}
-
-console.log("Expected output of the product of elements in an array[1,2,3,4] is 24 " +
-    myFunctionTest(24, function () {
-        return multiply([1, 2, 3, 4])
-    }));
-
-function reverse(str) {
-    let output = "";
-    for (let i = str.length; i >= 0; i--) {
-        output += str.charAt(i);
-    }
-    return output;
-}
-
-console.log("Expected output of the reversed form of the string Hello is olleh " +
-    myFunctionTest('ratset gaj', function () {
-        return reverse('jag testar')
-    }));
-
-function findLongestWord(arr) {
-    let length = 0;
-    let word = '';
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].length > length) {
-            length = arr[i].length;
-        }
-    }
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].length == length) {
-            word = arr[i];
-        }
-    }
-    return word;
-}
-
-console.log("Expected output of the longest word in an array ['hello','good bye','how are you','good night'] is how are you " +
-    myFunctionTest('how are you', function () {
-        return findLongestWord(['hello', 'good bye', 'how are you',
-            'good night'])
-    }));
-
-function filterLongWords(arr, j) {
-    const c = arr.filter(function (elem, i, array) {
-        return elem.length > j;
-    })
-    return c;
-}
-
-function arraysEqual(arr1, arr2) {
-    if (arr1.length !== arr2.length)
+    if(alphabet==='a' || alphabet==='e' || alphabet==='i' || alphabet==='o' || alphabet==='u')
+        return true;
+    else
         return false;
-    for (let i = arr1.length; i--;) {
-        if (arr1[i] !== arr2[i])
-            return false;
-    }
+}
+console.log("Expected output of isVowel is True  " + myFunctionTest(true, isVowel("u")));
+console.log("Expected output of isVowel is False  " + myFunctionTest(true, isVowel("z")));
 
-    return true;
+
+
+function sum(arr){
+    var s=0;
+    for(var i=0; i<arr.length;i++){
+        s+= arr[i];
+    }
+    return s;
 }
 
-console.log("Expected output of the array of words['intelligent','clever','awesome'] who are longer than 5 are intelligent,clever,awesome " +
-    myFunctionArrayTest(["intelligent", "clever", "awesome"], function () {
-        return filterLongWords(["intelligent", "clever", "awesome", "hello"], 5);
-    }));
-const a = [1, 3, 5, 3, 3];
-const b = a.map(function (elem, i, array) {
+console.log("Expected output of sum is 20  " + myFunctionTest(20, sum([10,2,4,4])));
+
+
+function multiply(arr){
+    var product=1;
+    for(var i=0; i<arr.length;i++){
+        product*= arr[i];
+    }
+    return product;
+}
+
+console.log("Expected output of multiply is 240  " + myFunctionTest(240, multiply([10,4,3,2])));
+
+
+function reverse(str){
+    var reversed = "";
+    for(var i = 0;i<str.length;i++)
+    {
+        reversed += str.charAt(str.length-i-1);
+    }
+    return reversed;
+}
+
+console.log("Expected output of reverse is esreveR  " + myFunctionTest("esreveR", reverse("Reverse")));
+
+
+function findLongestWord(wordList) {
+
+    var maxLength = wordList[0].length;
+
+    for(var i=1; i< wordList.length; i++) {
+        if(maxLength<wordList[i].length ) {
+            maxLength=wordList[i].length;
+        }
+    }
+    return maxLength;
+}
+
+
+console.log("Expected output of findLongestWord is 9  " + myFunctionTest(9, findLongestWord(["hello","world","this","is","wonderful"])));
+
+function testArray(expected, found) {
+    if(expected.length !== found.length)
+        return "TEST FAILED.  Expected length " + expected.length + " found length" + found.length;
+    for(var i = 0;i<expected.length;i++) {
+        if(expected[i] !== found[i])
+            return "TEST FAILED.  Expected " + expected[i] + " found " + found[i];
+    }
+    return "TEST SUCCEEDED";
+}
+
+
+function filterLongWords(a,x) {
+
+    var b= [];
+    var j=0;
+    for(var i=0; i< a.length; i++) {
+        if(a[i].length > x) {
+            b[j]= a[i];
+            j++;
+        }
+    }
+    return b;
+}
+
+console.log("Expected output of filterLongWords is 'wonderful'  " + testArray(["really","wonderful"], filterLongWords(["this","is","really","very","wonderful"],4)));
+
+
+
+const a = [1,3,5,3,3];
+const b = a.map(function(elem, i, array) {
     return elem * 10;
+});
+
+
+console.log("Expected output after multiplying by 10 [10,30,50,30,30]  " + testArray([10,30,50,30,30], b));
+
+
+const e = a.reduce(function(prevVal,elem, i, array) {
+    return prevVal * elem;
 })
-//how to use filter array method in a function
-console.log("multiply each element by 10 ..." + b);
-const c = a.filter(function (elem, i, array) {
+console.log("Result of multiplication of each element is 135  " + myFunctionTest(135, e));
+
+
+const a1 = [3,3,3,3];
+const c = a1.filter (function( elem , i , array){
     return elem === 3;
 });
-//how to use reduce array method in a function
-console.log("return array with all elements equal to 3 ..." + c);
-const d = a.reduce(function (prevValue, elem, i, array) {
-    return prevValue * elem;
-});
-console.log("return the product of all elements ..." + d);
+if(c.length== a1.length)
+    console.log("Array with all elements equal to 3 is [3,3,3,3]  " + testArray([3,3,3,3], c));
