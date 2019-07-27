@@ -39,7 +39,7 @@ function maxOfThree(a, b, c) {
 console.log("Expected output of maxOfThree(8,5,6) is 8  " + myFunctionTest(8, function () {
     return maxOfThree(8, 5, 6);
 }));
-
+/* takes a strignas argument and checks of there is a vowel in it */
 function isVowel(a) {
     if (a.length !== 1) {
         return false;
@@ -55,7 +55,7 @@ function isVowel(a) {
 console.log("Expected output of isVowel('e) is true " + myFunctionTest(true, function () {
     return isVowel('e');
 }));
-
+/* take an array as a function and adds all the elements in the array and gives a total sum as an output */
 function sum(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -141,10 +141,12 @@ const a = [1, 3, 5, 3, 3];
 const b = a.map(function (elem, i, array) {
     return elem * 10;
 })
+//how to use filter array method in a function
 console.log("multiply each element by 10 ..." + b);
 const c = a.filter(function (elem, i, array) {
     return elem === 3;
 });
+//how to use reduce array method in a function
 console.log("return array with all elements equal to 3 ..." + c);
 const d = a.reduce(function (prevValue, elem, i, array) {
     return prevValue * elem;
