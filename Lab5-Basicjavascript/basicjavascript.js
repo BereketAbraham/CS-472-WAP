@@ -49,8 +49,12 @@ function sum(arr){
     }
     return s;
 }
+console.log("Expected output of sum is 20  " + myFunctionTest(20, sum([10, 2, 4, 4])));
 
-console.log("Expected output of sum is 20  " + myFunctionTest(20, sum([10,2,4,4])));
+const array1 = [10, 2, 4, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+const sum1 = array1.reduce(reducer);
+console.log("\"*** Reduce Array method *** Expected output of sum is 20  " + myFunctionTest(20, sum1));
 
 
 function multiply(arr){
@@ -60,8 +64,13 @@ function multiply(arr){
     }
     return product;
 }
+console.log("Expected output of multiply is 240  " + myFunctionTest(240, multiply([10, 4, 3, 2])));
 
-console.log("Expected output of multiply is 240  " + myFunctionTest(240, multiply([10,4,3,2])));
+const array2 = [10,4,3,2];
+const multiplier = (a , b) => a * b;
+const multiply1 = array2.reduce(multiplier);
+
+console.log("*** Reduce Array method *** Expected output of multiply is 240  " + myFunctionTest(240, multiply1));
 
 
 function reverse(str){
