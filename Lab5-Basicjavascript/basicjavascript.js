@@ -51,10 +51,12 @@ function sum(arr){
 }
 console.log("Expected output of sum is 20  " + myFunctionTest(20, sum([10, 2, 4, 4])));
 
-const array1 = [10, 2, 4, 4];
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
-const sum1 = array1.reduce(reducer);
-console.log("\"*** Reduce Array method *** Expected output of sum is 20  " + myFunctionTest(20, sum1));
+//1....reducer sum
+function sum1(arr){
+    const  reducer = (accum, num) => accum + num;
+    return arr.reduce(reducer);
+}
+console.log("*** Reduce Array method *** Expected output of sum is 20  " + myFunctionTest(20, sum1([10, 2, 4, 4])));
 
 
 function multiply(arr){
@@ -66,11 +68,13 @@ function multiply(arr){
 }
 console.log("Expected output of multiply is 240  " + myFunctionTest(240, multiply([10, 4, 3, 2])));
 
-const array2 = [10,4,3,2];
-const multiplier = (a , b) => a * b;
-const multiply1 = array2.reduce(multiplier);
+//2.. reducer sum
+function multiply1(arr){
+    const reducer = (a,b)=>a*b;
+    return arr.reduce(reducer);
+}
 
-console.log("*** Reduce Array method *** Expected output of multiply is 240  " + myFunctionTest(240, multiply1));
+console.log("*** Reduce Array method *** Expected output of multiply is 240  " + myFunctionTest(240, multiply1([10, 4, 3, 2])));
 
 
 function reverse(str){
@@ -84,6 +88,12 @@ function reverse(str){
 
 console.log("Expected output of reverse is esreveR  " + myFunctionTest("esreveR", reverse("Reverse")));
 
+//3..... reverse
+function reverseString(str){
+    return str.split("").reverse().join("");
+}
+
+console.log("*** Split, reverse and join array methods *** Expected output of Hello is olleH " + myFunctionTest("olleH", reverseString("Hello")));
 
 function findLongestWord(wordList) {
 
@@ -110,6 +120,12 @@ function testArray(expected, found) {
     return "TEST SUCCEEDED";
 }
 
+//4......longest array
+function filterLongWords(str,len) {
+    return str.filter(function(str){return str.length>len;});
+}
+console.log("*** Split, reverse and join array methods *** Expected output of filterLongWords is '[hello,world]'  " + testArray(["world","hello"], filterLongWords(["hi","it","is","world","of","hello"],3)));
+
 
 function filterLongWords(a,x) {
 
@@ -125,8 +141,6 @@ function filterLongWords(a,x) {
 }
 
 console.log("Expected output of filterLongWords is 'wonderful'  " + testArray(["really","wonderful"], filterLongWords(["this","is","really","very","wonderful"],4)));
-
-
 
 const a = [1,3,5,3,3];
 const b = a.map(function(elem, i, array) {
