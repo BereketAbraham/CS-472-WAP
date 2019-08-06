@@ -1,17 +1,18 @@
 /*html and css validation icons on a bottom right fixed position and is opaque */
-#validation{
+#validation {
     position: fixed;
     bottom: 10px;
     right: 10px;
     opacity: 0.5;
     text-align: right;
 }
+
 h1, h2 {
     text-align: center;
 }
 
-body{
-    background-color:white;
+body {
+    background-color: white;
 }
 
 p {
@@ -45,7 +46,7 @@ p {
 }
 
 #end {
-    background-color:mediumpurple;
+    background-color: mediumpurple;
     right: 0;
 }
 

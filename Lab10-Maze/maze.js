@@ -1,6 +1,8 @@
+(function () {
+    "use strict";
 var win = true;
 
-$(document).ready(function () {
+$('document').ready(function () {
     $("#start").click(
         function () {
             $("#status").text("Good Luck.");
@@ -44,4 +46,4 @@ function endGame() {
     $('.boundary').unbind('hover');
     $("#maze").unbind('mouseleave');
 }
-
+})();
