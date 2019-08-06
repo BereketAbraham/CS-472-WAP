@@ -31,7 +31,7 @@ console.log("\n .....................using function Constructor.................
 function Person(name) {
     this.name = name;
 };
-const teacher = new Person("Dr. Kith Levi");
+const teacher = new Person("Dr. Keith Levi");
 Person.prototype.teach = function (subject) {
     return this.name + " is now teaching" + subject;
 }
