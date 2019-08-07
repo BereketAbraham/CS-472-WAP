@@ -20,12 +20,12 @@ p {
     margin: 1em auto;
 }
 
-#maze {
-    margin: auto;
-    position: relative;
-    height: 300px;
-    width: 500px;
-}
+/*#maze {*/
+/*    margin: auto;*/
+/*    position: relative;*/
+/*    height: 300px;*/
+/*    width: 500px;*/
+/*}*/
 
 #start, #end {
     position: absolute;
@@ -38,6 +38,7 @@ p {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 25pt;
     text-align: center;
+    text-decoration: n;
 }
 
 #start {
