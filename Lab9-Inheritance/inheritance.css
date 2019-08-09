@@ -12,7 +12,14 @@ body{
 }
 p{
     text-align: center;
-    color: white;
+    color: white !important;
+    font-size: 30px;
+
+}
+
+p{
+    text-align: center;
+    color: red;
     font-size: 30px;
 
 }
