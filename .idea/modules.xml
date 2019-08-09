@@ -3,9 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Assignments.iml" filepath="$PROJECT_DIR$/Assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BeerAdvisor/BeerAdvisor.iml" filepath="$PROJECT_DIR$/BeerAdvisor/BeerAdvisor.iml" />
       <module fileurl="file://$PROJECT_DIR$/ImprovedCalculatorApp/ImprovedCalculatorApp.iml" filepath="$PROJECT_DIR$/ImprovedCalculatorApp/ImprovedCalculatorApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSPDemo/JSPDemo.iml" filepath="$PROJECT_DIR$/JSPDemo/JSPDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSPIntro/JSPIntro.iml" filepath="$PROJECT_DIR$/JSPIntro/JSPIntro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSPQuizLab/JSPQuizLab.iml" filepath="$PROJECT_DIR$/JSPQuizLab/JSPQuizLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleCalculatorApp/SimpleCalculatorApp.iml" filepath="$PROJECT_DIR$/SimpleCalculatorApp/SimpleCalculatorApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BeerAdvisor/hello-servlet.iml" filepath="$PROJECT_DIR$/BeerAdvisor/hello-servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloservlet/helloservlet.iml" filepath="$PROJECT_DIR$/helloservlet/helloservlet.iml" />
     </modules>
   </component>
