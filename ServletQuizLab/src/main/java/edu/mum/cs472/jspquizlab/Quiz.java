@@ -12,11 +12,7 @@ public class Quiz {
 		questions.add(new Question("[1,8,27,64,125,?]", "216"));
 		questions.add(new Question("[0,1,1,2,3,?]", "5"));
 		questions.add(new Question("[2,4,6,8,10,?]", "12"));
-		questions.add(new Question("[2,4,6,5,10,?]", "34"));
-		questions.add(new Question("[5,4,6,8,146,?]", "45"));
-		questions.add(new Question("[5,4,6,85,100,?]", "4"));
-		questions.add(new Question("[52,4,6,48,10,?]", "14"));
-		questions.add(new Question("[3,44,6,8,10,?]", "52"));
+
 	}
 
 	public String getCurrentQuestion() {

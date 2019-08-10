@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JSPDemo" />
+        <module name="JSPQuizLab" />
         <module name="BeerAdvisor" />
         <module name="ImprovedCalculatorApp" />
         <module name="JSPIntro" />
         <module name="SimpleCalculatorApp" />
-        <module name="JSPQuizLab" />
+        <module name="JSPDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +23,7 @@
       <module name="JSPDemo" target="1.8" />
       <module name="JSPIntro" target="1.8" />
       <module name="JSPQuizLab" target="1.8" />
+      <module name="ServletQuizLab" target="1.8" />
       <module name="simplecalculator" target="1.8" />
       <module name="SimpleCalculatorApp" target="1.8" />
     </bytecodeTargetLevel>
