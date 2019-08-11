@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JSPQuizLab" />
         <module name="BeerAdvisor" />
+        <module name="guestlistAjax" />
         <module name="ImprovedCalculatorApp" />
         <module name="JSPIntro" />
         <module name="SimpleCalculatorApp" />
@@ -17,12 +18,15 @@
     <bytecodeTargetLevel>
       <module name="beer-advisor" target="1.8" />
       <module name="BeerAdvisor" target="1.8" />
+      <module name="guestlistAjax" target="1.8" />
+      <module name="GuestListAjaxlab" target="1.8" />
       <module name="hello-servlet" target="1.8" />
       <module name="helloservlet" target="1.8" />
       <module name="ImprovedCalculatorApp" target="1.8" />
       <module name="JSPDemo" target="1.8" />
       <module name="JSPIntro" target="1.8" />
       <module name="JSPQuizLab" target="1.8" />
+      <module name="JSPQuizLab (1)" target="1.8" />
       <module name="ServletQuizLab" target="1.8" />
       <module name="simplecalculator" target="1.8" />
       <module name="SimpleCalculatorApp" target="1.8" />

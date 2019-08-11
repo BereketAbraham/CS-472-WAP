@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/JSPIntro/JSPIntro.iml" filepath="$PROJECT_DIR$/JSPIntro/JSPIntro.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSPQuizLab/JSPQuizLab.iml" filepath="$PROJECT_DIR$/JSPQuizLab/JSPQuizLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleCalculatorApp/SimpleCalculatorApp.iml" filepath="$PROJECT_DIR$/SimpleCalculatorApp/SimpleCalculatorApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guestListAjax/guestlistAjax.iml" filepath="$PROJECT_DIR$/guestListAjax/guestlistAjax.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloservlet/helloservlet.iml" filepath="$PROJECT_DIR$/helloservlet/helloservlet.iml" />
     </modules>
   </component>

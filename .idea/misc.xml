@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/guestListAjax" />
+    <file type="web" url="file://$PROJECT_DIR$/GuestListAjaxlab" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -10,6 +17,8 @@
         <option value="$PROJECT_DIR$/JSPDemo/pom.xml" />
         <option value="$PROJECT_DIR$/JSPIntro/pom.xml" />
         <option value="$PROJECT_DIR$/JSPQuizLab/pom.xml" />
+        <option value="$PROJECT_DIR$/GuestListAjaxlab/pom.xml" />
+        <option value="$PROJECT_DIR$/guestListAjax/pom.xml" />
       </list>
     </option>
   </component>
